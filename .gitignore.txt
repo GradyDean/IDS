@@ -1,0 +1,22 @@
+# Ignore CSV data files
+*.csv
+
+# Ignore Python virtual environments
+venv/
+.venv/
+
+# Ignore joblib model files
+*.joblib
+
+# Optional: Ignore typical Python junk
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+
+# Ignore Jupyter notebook checkpoints (if using notebooks)
+.ipynb_checkpoints/
+
+# Ignore macOS metadata files (optional)
+.DS_Store

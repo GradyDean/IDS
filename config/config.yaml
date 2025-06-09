@@ -1,0 +1,38 @@
+# IDS Configuration
+
+# Network Interface
+interface: "eth0"  # Change this to your network interface
+
+# Packet Capture Settings
+packet_capture:
+  buffer_size: 100
+  timeout: 0  # 0 means no timeout
+
+# Anomaly Detection Settings
+anomaly_detection:
+  contamination: 0.001
+  n_estimators: 100
+  random_state: 42
+
+# Alert Settings
+alerts:
+  severity_levels:
+    - low
+    - medium
+    - high
+  notification:
+    enabled: true
+    email: "admin@example.com"
+
+# Logging Settings
+logging:
+  level: "INFO"
+  file: "logs/ids.log"
+  max_size: 10485760  # 10MB
+  backup_count: 5
+
+# Model Settings
+model:
+  path: "data/models/anomaly_detector.joblib"
+  scaler_path: "data/models/scaler.joblib"
+  retrain_interval: 86400  # 24 hours in seconds 
